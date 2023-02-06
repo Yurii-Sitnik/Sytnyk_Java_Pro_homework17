@@ -18,7 +18,7 @@ public class BinaryTree {
         return current;
     }
 
-    // Центрированный обход дерева
+    // In-order Traversal
     public void traverseInOrder(Node node) {
         if (node != null) {
             traverseInOrder(node.left);
@@ -27,7 +27,7 @@ public class BinaryTree {
         }
     }
 
-    // Обратный обход дерева
+    // Post-order Traversal
     public void traversePostOrder(Node node) {
         if (node != null) {
             traversePostOrder(node.left);
@@ -36,7 +36,7 @@ public class BinaryTree {
         }
     }
 
-    // Прямой обход дерева
+    // Pre-order Traversal
     public void traversePreOrder(Node node) {
         if (node != null) {
             System.out.print(" " + node.key);

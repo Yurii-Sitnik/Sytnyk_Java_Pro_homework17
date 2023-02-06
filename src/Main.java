@@ -10,11 +10,11 @@ public class Main {
         tree.addNode(13);
         tree.addNode(14);
 
-        System.out.print("Прямой обход дерева: ");
+        System.out.print("Pre-order Traversal: ");
         tree.traversePreOrder(tree.root);
-        System.out.print("\nЦентрированный обход дерева: ");
+        System.out.print("\nIn-order Traversal: ");
         tree.traverseInOrder(tree.root);
-        System.out.print("\nОбратный обход дерева: ");
+        System.out.print("\nPost-order Traversal: ");
         tree.traversePostOrder(tree.root);
     }
 }
